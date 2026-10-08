@@ -1,8 +1,20 @@
 use std::io;
 
 fn main() {
-    println!("Whats your name?");
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).expect("Failed to Load!");
-    println!("Hello, {}!", input.trim());
+    println!("First name?");
+
+    let mut name = String::new();
+    io::stdin().read_line(&mut name).expect("Failed to Load!");
+    
+    println!("Last name?");
+
+    let mut surname = String::new();
+    io::stdin().read_line(&mut surname).expect("Failed to Load!");
+
+    println!("Full name: {} {}", name.trim(), surname.trim());
+
+
+
+
+
 }
